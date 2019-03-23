@@ -10,12 +10,12 @@ def draw_chart(plt, input_data1, input_data2):
     # plot the graph
     x = np.arange(0, len(vm_df), 1)
 
-    ax1= plt.errorbar(x, vm_df['amazon'], yerr=vsem_df['amazon'], color="blue", linewidth=0.5, marker='*' )
-    ax2= plt.errorbar(x, vm_df['apple'],  yerr=vsem_df['apple'], color="red",linewidth=0.5, marker='*')
-    ax3= plt.errorbar(x, vm_df['facebook'],yerr=vsem_df['facebook'], color="green",linewidth=0.5, marker='*' )
-    ax4= plt.errorbar(x, vm_df['google'],  yerr=vsem_df['google'], color="black",linewidth=0.5, marker='*' )
-    ax5= plt.errorbar(x, vm_df['microsoft'],yerr=vsem_df['microsoft'], color="orange", linewidth=0.5, marker='*' )
-    ax6= plt.errorbar(x, vm_df['netflix'], yerr=vsem_df['netflix'], color="purple",linewidth=0.5, marker='*')
+    ax1= plt.errorbar(x, vm_df['amazon'], yerr=vsem_df['amazon'], color="darkorange", linewidth=0.5, marker='*' )
+    ax2= plt.errorbar(x, vm_df['apple'],  yerr=vsem_df['apple'], color="grey",linewidth=0.5, marker='*')
+    ax3= plt.errorbar(x, vm_df['facebook'],yerr=vsem_df['facebook'], color="royalblue",linewidth=0.5, marker='*' )
+    ax4= plt.errorbar(x, vm_df['google'],  yerr=vsem_df['google'], color="gold",linewidth=0.5, marker='*' )
+    ax5= plt.errorbar(x, vm_df['microsoft'],yerr=vsem_df['microsoft'], color="green", linewidth=0.5, marker='*' )
+    ax6= plt.errorbar(x, vm_df['netflix'], yerr=vsem_df['netflix'], color="red",linewidth=0.5, marker='*')
 
     #year = np.arange(2008,2019,1)
     year=['2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018']
@@ -29,12 +29,13 @@ def draw_chart2(plt, input_data1, input_data2):
     # plot the graph
     x = np.arange(0, len(vm_df), 1)
 
-    ax1= plt.errorbar(x, vm_df['amazon'], yerr=vsem_df['amazon'], color="blue", linewidth=0.5, marker='*' )
-    ax2= plt.errorbar(x, vm_df['apple'],  yerr=vsem_df['apple'], color="red",linewidth=0.5, marker='*')
-    ax3= plt.errorbar(x, vm_df['facebook'],yerr=vsem_df['facebook'], color="green",linewidth=0.5, marker='*' )
-    ax4= plt.errorbar(x, vm_df['google'],  yerr=vsem_df['google'], color="black",linewidth=0.5, marker='*' )
-    ax5= plt.errorbar(x, vm_df['microsoft'],yerr=vsem_df['microsoft'], color="orange", linewidth=0.5, marker='*' )
-    ax6= plt.errorbar(x, vm_df['netflix'], yerr=vsem_df['netflix'], color="purple",linewidth=0.5, marker='*')
+    ax1= plt.errorbar(x, vm_df['amazon'], yerr=vsem_df['amazon'], color="darkorange", linewidth=0.5, marker='*' )
+    ax2= plt.errorbar(x, vm_df['apple'],  yerr=vsem_df['apple'], color="grey",linewidth=0.5, marker='*')
+    ax3= plt.errorbar(x, vm_df['facebook'],yerr=vsem_df['facebook'], color="royalblue",linewidth=0.5, marker='*' )
+    ax4= plt.errorbar(x, vm_df['google'],  yerr=vsem_df['google'], color="gold",linewidth=0.5, marker='*' )
+    ax5= plt.errorbar(x, vm_df['microsoft'],yerr=vsem_df['microsoft'], color="green", linewidth=0.5, marker='*' )
+    ax6= plt.errorbar(x, vm_df['netflix'], yerr=vsem_df['netflix'], color="red",linewidth=0.5, marker='*')
+
 
     #year = np.arange(2008,2019,1)
     year= ['2012', '2013', '2014', '2015', '2016', '2017', '2018']
@@ -52,7 +53,7 @@ def print_label(plt, col_name):
 
 
     plt.tight_layout()
-    plt.savefig(f"./{col_name}.png")
+    plt.savefig(f"./Images/Data_Visualization/{col_name}.png")
 
 def calc_means(input_data, col_name):
     data=input_data
